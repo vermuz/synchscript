@@ -70,7 +70,6 @@ logging.basicConfig(
 
 # Establish Master DB Connectivity
 dbMasterCon = MySQLdb.connect(host= masterHost, user = masterUser, passwd = masterPasswd, port = int(masterPort))
-print dbMasterCon
 logging.info("DB Connected")
 cur = dbMasterCon.cursor()
 cur.execute("RESET MASTER")
