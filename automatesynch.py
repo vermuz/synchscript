@@ -15,14 +15,14 @@ MYSQL_DUMP = "mysqldump"
 # MASTER DATA
 masterHost   = '127.0.0.1'
 masterUser   = 'root'
-masterPasswd = 'india611'
+masterPasswd = 'password'
 masterPort   = 3306
 
 # SLAVE DATA
 slaveHost    = '127.0.0.1'
 slavePort    = 3307
 slaveUser    = 'root'
-slavePasswd  = 'india611'
+slavePasswd  = 'password'
 
 logging.basicConfig(
                     level=    logging.DEBUG,
@@ -77,7 +77,7 @@ subprocess.call(['scp', filepath, ':'.join([hostname,remote_path])])
 #logging.info("Replication complete")
 remote_user = 'mani'
 remote_host = 'localhost'
-remote_pass = 'india611'
+remote_pass = 'password'
 slavePort = '3307'
 #print ' < /home/mani/' + os.path.basename(f)  
 
