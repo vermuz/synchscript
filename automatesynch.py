@@ -29,7 +29,7 @@ logging.basicConfig(
                     format='%(asctime)s - %(levelname)s - %(message)s',
                     filename='/home/mani/vre_synch1.txt'
                    )
-#dbMasterCon = MySQLdb.connect(host='127.0.0.1', user='root', passwd='india611', port=3306)
+#dbMasterCon = MySQLdb.connect(host='127.0.0.1', user='root', passwd='password', port=3306)
 dbMasterCon = MySQLdb.connect(host= masterHost, user = masterUser, passwd = masterPasswd, port = masterPort)
 logging.info("DB Connected")
 cur = dbMasterCon.cursor()
